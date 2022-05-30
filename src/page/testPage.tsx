@@ -2,18 +2,18 @@ import { View, Text, Button } from "react-native";
 import tw from "twrnc";
 import MainLayout from "../layout/mainLayout";
 
-const CalenderPage = ({ navigation }) => {
+const TestPage = ({ navigation }) => {
   return (
     <MainLayout>
-      <Text>Calendaaar</Text>
-      <View style={tw`bg-neutral-500`}>
+      <View style={tw`bg-neutral-200`}>
+        <Text>Test</Text>
         <Button
           title="Go to Details... again"
-          onPress={() => navigation.push("Test")}
+          onPress={() => navigation.push("Home")}
         />
       </View>
     </MainLayout>
   );
 };
 
-export default CalenderPage;
+export default TestPage;

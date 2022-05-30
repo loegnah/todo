@@ -6,10 +6,8 @@ import MainContentLayout from "./mainContentLayout";
 
 const MainLayout = ({ children }) => {
   return (
-    <SafeAreaView style={tw`h-full bg-amber-800 flex flex-col`}>
-      <Banner />
+    <SafeAreaView style={tw`h-full`}>
       <MainContentLayout>{children}</MainContentLayout>
-      <NavigationBar />
     </SafeAreaView>
   );
 };
